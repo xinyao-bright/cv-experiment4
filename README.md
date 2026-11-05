@@ -12,7 +12,7 @@ MNIST 训练集有 60000 张图像，测试集有 10000 张，每张都是 28 ×
 
 ![MNIST 训练样本](results/samples.png)
 
-基础实验采用参考 PDF 中的设置。两组 MLP 只改变学习率，网络结构和初始权重保持一致。新增 LeNet 与学习率 0.1 的 MLP 比较，三组使用相同的数据划分、每轮样本顺序、批量大小和训练轮数，随机种子均为 42。三组都在训练结束后测试一次，没有根据测试结果选择训练轮数。
+两组 MLP 只改变学习率，网络结构和初始权重保持一致。新增 LeNet 与学习率 0.1 的 MLP 比较，三组使用相同的数据划分、每轮样本顺序、批量大小和训练轮数，随机种子均为 42。三组都在训练结束后测试一次，没有根据测试结果选择训练轮数。
 
 | 项目 | 设置 |
 | --- | --- |
@@ -192,4 +192,3 @@ python mlp_mnist.py
 
 逐轮训练损失见 [history.csv](results/history.csv)，最终指标见 [summary.csv](results/summary.csv)，环境信息见 [environment.json](results/environment.json)。每张测试图的标签和三组预测保存在 [predictions.npz](results/predictions.npz)，LeNet 与 MLP 的逐样本比较见 [lenet_comparison.json](results/lenet_comparison.json)。
 
-参考资料：教师提供的实验四参考代码 PDF、[往年实验报告](https://github.com/Guyudong1/CV_exp/tree/main/4th.exp)、[LeNet 原论文](https://bottou.org/papers/lecun-98h)。图像和数值均来自本次实际运行。
