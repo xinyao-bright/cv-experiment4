@@ -1,0 +1,29 @@
+{
+  "mlp_wrong_lenet_correct": 386,
+  "mlp_correct_lenet_wrong": 47,
+  "both_wrong": 346,
+  "corrected_first10": [
+    8,
+    77,
+    92,
+    124,
+    193,
+    195,
+    217,
+    233,
+    245,
+    300
+  ],
+  "regressed_first10": [
+    376,
+    495,
+    571,
+    810,
+    1466,
+    1571,
+    1621,
+    1626,
+    1678,
+    1721
+  ]
+}

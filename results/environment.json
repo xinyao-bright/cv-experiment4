@@ -11,5 +11,7 @@
   "train_samples": 60000,
   "test_samples": 10000,
   "normalization": "像素除以 255",
-  "threads": 4
+  "threads": 4,
+  "lenet_input": "28 × 28 图像四周各补 2 个零到 32 × 32",
+  "lenet_variant": "Tanh、平均池化、全通道卷积、线性分类输出"
 }
